@@ -18,6 +18,8 @@ jobs:
           python-version: '3.x'
 
       - name: Run student marks program
-        run: |
-          python -m py_compile student_marks.py
-          echo "Python syntax test passed"
+  run: 
+    output=$(printf "80\n80\n80\n80\n80\n" | python student_marks.py)
+    echo "$output"
+    echo "$output" | grep -q "Percentage: 80.0"
+    echo "Functional test passed"

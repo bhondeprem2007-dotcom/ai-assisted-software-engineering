@@ -31,7 +31,7 @@ for i in range(5):
 
 
 total = sum(marks)
-percentage = total / 5
+percentage = total / 4
 grade = calculate_grade(percentage)
 
 print("\n--- Student Result ---")
